@@ -1,0 +1,139 @@
+.letrasin{
+	color: green;
+	size: 200px;
+}
+.alineo{
+	right: 430px;
+}
+div.error {
+	font-size: 25px;
+	color : red;	
+	border : 2px solid red;
+	padding : 10px;
+	margin: 10px;
+}
+
+header{
+	display:block; 
+	color: green; 
+	border-bottom:5px solid orange;
+}
+footer{
+	border-top: 5px solid orange;
+	text-align:center;
+	clear: both;
+}
+
+#fondo {
+	background-color: orange;
+}
+#logo{
+	background-color: orange;
+	height: 50px;
+	width: 80px;
+	border-radius: 10px;
+	margin-left: 50px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	box-shadow: 5px 5px 0px #424242;
+	padding: 10px;
+	border: 1px solid #000;
+}
+.boton{
+	color: white;
+	background-color: blue;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 12px;
+	
+}
+.boton:hover{
+	color: blue;
+	background-color: white;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 12px;
+}
+.enlace:hover{
+	background-color: yellow;
+}
+.cuerpo{
+	background: url(../imagenes/fondo_inicio.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-family: Arial;
+	color:white;
+}
+ul, ol {
+	list-style:none;
+}
+
+.nav {
+	width:1000px; /*Le establecemos un ancho*/
+	margin:0 auto; /*Centramos automaticamente*/	
+}
+ 
+.nav > li {
+	float:left;
+	width:200px;
+	height: 40px;
+	background-color:black;
+	line-height: 40px;
+	text-align:center;
+	font-size: 20px;
+}
+.tam{
+	font-size:17px;
+}
+.pos{
+	 position: relative;
+    top: -100px; /* ajustar los valores para mover la imagen */
+    left: -5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 9%;
+    margin: 20%;
+    border:2px solid #fff;
+ 
+}
+.nav li a {
+	text-decoration: none;
+	color:white;
+	display: block;
+}
+
+.nav li a:hover {
+	background-color:green;	
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+}
+
+.ajustetop{
+
+	right:-140px;
+	top:0px;
+}
+.ajustedown{
+	right:-320px;
+	top:0px;
+}
+
+
+
+
+
+
+
+
