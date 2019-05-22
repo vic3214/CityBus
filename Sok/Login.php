@@ -1,6 +1,6 @@
 <?php
 	session_start();
-  	
+ 	
   	include_once("gestionBD.php");
  	include_once("gestionUsuarios.php");
 	
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-	<?php
+<?php
 	include_once("cabecera.php");
 ?>
 

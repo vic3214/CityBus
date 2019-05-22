@@ -8,20 +8,17 @@
 
  function alta_usuario($conexion,$usuario) {
 	try {
-		$consulta = "CALL registracliente(:nif, :nombre, :apellidos,:email, :pass, :sistemapuntos)";
+		$consulta = "CALL registracliente(:nif, :nombre,:email, :pass)";
 		$stmt=$conexion->prepare($consulta);
 		$stmt->bindParam(':nif',$usuario["nif"]);
 		$stmt->bindParam(':nombre',$usuario["nombre"]);
-		$stmt->bindParam(':apellidos',$usuario["apellidos"]);
 		$stmt->bindParam(':email',$usuario["email"]);
 		$stmt->bindParam(':pass',$usuario["pass"]);
-		$stmt->bindParam(':sistemapuntos',$usuario["sistemapuntos"]);
 		
 		$stmt->execute();
-		
 		return true;
 	} catch(PDOException $e) {
-		return false;
+		$mensajeerror = 'Ha ocurrido el siguiente error al registrarte: '.$e->getMessage();
 		// Si queremos visualizar la excepción durante la depuración: $e->getMessage();
     }
 }

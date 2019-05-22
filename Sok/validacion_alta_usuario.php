@@ -71,6 +71,11 @@ function validarDatosUsuario($conexion, $nuevoUsuario){
 	}else if($nuevoUsuario["pass"] != $nuevoUsuario["confirmpass"]){
 		$errores[] = "<p>La confirmación de contraseña no coincide con la contraseña</p>";
 	}
+	
+	//Validación de la confirmación de la contraseña
+	if(!isset($nuevoUsuario["confirmpass"]) || ($nuevoUsuario["pass"]!=$nuevoUsuario["confirmpass"])){
+		$errores[] = "<p>La confirmación de la contraseña no coincide con la contraseña.</p>";
+	}
 	}
 	
 	?>

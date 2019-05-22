@@ -75,12 +75,8 @@
 		</fieldset>
 
 		<fieldset><legend>Datos de cuenta</legend>
-			
-			<div><label for="nick">Nickname:</label>
-				<input id="nick" name="nick" type="text" size="40" value="<?php echo $formulario['email'];?>" />
-			</div>
 			<div><label for="pass">Password:<em>*</em></label>
-                <input type="password" name="pass" id="pass" placeholder="Mínimo 8 caracteres entre letras y dígitos" required oninput="passwordValidation(); "/>
+                <input type="password" name="pass" id="pass" placeholder="Contraseña" required oninput="passwordValidation(); " required/>
 			</div>
 			<div><label for="confirmpass">Confirmar Password: </label>
 				<input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmación de contraseña"  oninput="passwordConfirmation();" required/>
@@ -92,12 +88,12 @@
 				!Cúentanos¡
 			</legend>
 
-			<div><label for="tipoviaje">¿Sueles viejar por placer o por necesidad?:<em>*</em></label>
+			<div><label for="tipoviaje">¿Sueles viejar por placer o por necesidad?:</label>
 			<label>
-				<input name="tipoviaje" type="radio" value="NECESIDAD" <?php if($formulario['tipoviaje']=='NECESIDAD'){ echo ' checked ';} ?>/>
+				<input name="tipoviaje" type="radio" value="NECESIDAD" <?php if($formulario['tipoviaje']=='NECESIDAD') echo ' checked '; ?>/>
 				Necesidad</label>
 			<label>
-				<input name="tipoviaje" type="radio" value="PLACER" <?php if($formulario['tipoviaje']=='PLACER'){echo ' checked ';} ?>/>
+				<input name="tipoviaje" type="radio" value="PLACER" <?php if($formulario['tipoviaje']=='PLACER') echo ' checked '; ?>/>
 				Placer</label>
 			</div>
 

@@ -3,7 +3,7 @@
 	size: 200px;
 }
 .alineo{
-	right: 430px;
+	right: 420px;
 }
 div.error {
 	font-size: 25px;
@@ -67,10 +67,13 @@ footer{
 ul, ol {
 	list-style:none;
 }
-
+.tam{
+	font-size:17px;
+}
+/* panel desplegable*/
 .nav {
-	width:1000px; /*Le establecemos un ancho*/
-	margin:0 auto; /*Centramos automaticamente*/	
+	width:1000px;
+	margin:0 auto; 
 }
  
 .nav > li {
@@ -81,9 +84,6 @@ ul, ol {
 	line-height: 40px;
 	text-align:center;
 	font-size: 20px;
-}
-.tam{
-	font-size:17px;
 }
 .pos{
 	 position: relative;
@@ -119,17 +119,49 @@ ul, ol {
 .nav li ul li {
 	position:relative;
 }
+/* Fin panel desplegable*/
 
-.ajustetop{
-
-	right:-140px;
-	top:0px;
-}
-.ajustedown{
-	right:-320px;
-	top:0px;
+.ajuste{
+	right:-100px;
+	top:-40px;
 }
 
+.borde{
+	border-style:solid;
+	border-left: 10px solid orange;
+	border-bottom-color: black;
+	border-right-color: black;
+	border-top-color:black;
+}
+.borde2{
+	right:-100px;
+	top:-43px;
+	border-style:solid;
+	border-left: 10px solid orange;
+	border-bottom-color: black;
+	border-right-color: black;
+	border-top-color:black;
+	
+}
+.borde3{
+	border-style:solid;
+	border-left: 10px solid orange;
+	border-bottom-color: black;
+	border-right-color: black;
+	border-top-color:black;
+	left: -30px;
+	width: 137px;
+}
+input[type="submit"]{
+	padding: 10px;
+	color: #FFFFFF;
+	background: #0098cb;
+	border: 0;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
 
 
 
